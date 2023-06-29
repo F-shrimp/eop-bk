@@ -17,7 +17,6 @@ appi_mana = Blueprint('appi_mana',__name__)
 
 @appi_mana.route('/show_apinfo',methods=['POST','GET'])
 def show_apinfo():
-    print("1111")
     apif_dict, items_li = dict(), list()
     apif_dict["code"] = 20000
     apif_dict["messgae"] = "get appinfo success"
